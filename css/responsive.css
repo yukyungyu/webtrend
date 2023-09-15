@@ -1,0 +1,263 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@500;700&display=swap');
+/* font-family: 'Lexend Mega', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap');
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/* ------------------- Tablet ------------------- */
+@media screen and (min-width:768px) and (max-width:1199px) {
+  #pc-header {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+  #mo-header {
+    display: none;
+  }
+  
+  /* section start */
+  section>div {
+    padding: 100px 50px;
+  }
+  #main {
+    background: url('../images/bg/metal.png') no-repeat center center;
+    background-size: cover;
+  }
+  #main p {
+    padding: 0 50px;
+  }
+  /* ------ 01.y2k ------ */
+
+
+
+  /* ------ 02.big typo ------ */
+  .inner-02 p {
+    font-size: 14vw;
+  }
+
+
+  /* ------ 03.neo-brutalism ------ */
+  .inner-03 {
+    flex-direction: column;
+  }
+
+
+  /* ------ 04.darkmode ------ */
+  .inner-04 .first {
+    width: 60%;
+  }
+  .inner-04 .second {
+    width: 37%;
+  }
+  .inner-04 .third {
+    width: 100%;
+    height: auto;
+  }
+  .toggle {
+  }
+}
+
+
+
+
+/* ------------------- Mobile ------------------- */
+@media screen and (max-width:767px) {
+  #pc-header {
+    display: none;
+  } 
+  #mo-header {
+    display: block;
+  }
+  /* Mobile Menu */
+  #mo-header .mo_top {
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+  }
+  #mo-header .mo_view {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    z-index: 10000;
+    background-color: #191919;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  #mo-header.y2k .mo_view {background-color: #b8b8b8;}
+  #mo-header.typo .mo_view {color: #fff;}
+  #mo-header.neo .mo_view {background-color: #FFC900;}
+  #mo-header.darkmode .mo_view {color: #FD568E;}
+  
+  #mo-header.y2k .mo_view li:not(.close) 
+  {
+    background-color: #b8b8b8;
+    font-family: "NeoDunggeunmoPro-Regular";
+  }
+  #mo-header.typo .mo_view li:not(.close) 
+  {
+    color: #191919;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+  }
+  #mo-header.neo .mo_view li:not(.close) 
+  {
+    background-color: #FFC0CB;
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: 500;
+  }
+  #mo-header.darkmode .mo_view li:not(.close) 
+  {color: #FD568E;}
+  
+  .mo_menu_btn img {
+    height: 45px;
+    cursor: pointer;
+  }
+  .logo img {
+    height: 31px;
+  }
+  .mognb ul li.close { 
+    position: absolute;
+    top: 0;
+    right: 100%;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+  }
+  .mo_view .mognb ul li.close img{width: 100%;}
+  .mognb ul li:not(.close) {
+    width: 100%;
+    height: 60px;
+    color: #191919;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  .logo img {
+    width: 80px;
+    height: 31px;
+  }
+
+  /* section start */
+  section>div {
+    padding: 50px 15px;
+    /* padding: 0 15px 50px; */
+  }
+  #main {
+    background: url('../images/bg/per.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  #main p {
+    padding: 0 30px;
+  }
+
+  /* ------ 01.y2k ------ */
+  .window {
+    margin: 0 auto;
+  }
+  .window .content {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  }
+  
+  /* ------ 02.big typo ------ */
+  .inner-02 {
+    padding: 0 100px;
+  }
+  .inner-02 p {
+    font-size: 14vw;
+  }
+  .inner-02 span {
+    margin-top: 30px;
+  }
+
+  /* ------ 03.neo-brutalism ------ */
+  .inner-03 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .inner-03 div.card {
+    padding: 15px;
+  }
+  .inner-03 div.first {
+    flex-direction: column;
+    height: auto;
+    flex:1;
+  }
+  .inner-03 div.second {
+    flex:1;
+    height: auto;
+  }
+  .neo-title,
+  .neo-desc1.card, 
+  .neo-desc2.card {
+    width: 100%;
+    /* height: auto; */
+  }  
+  .neo-title {height: 20%;}
+  .neo-desc1,
+  .neo-desc2 {
+    height: 33%;
+  }
+  .btnBox { 
+    width: 90%;
+    margin: auto;
+  }
+  .btnBox:hover .button {
+    top: -20px;
+    left: -20px;
+  }
+  .btnBox:hover .button2 {
+    top: -10px;
+    left: -10px;
+  }
+  .star {
+    width: 55px;
+    height: 52px;
+    top: -20px;
+    left: -20px;
+  }
+  .btnBox:hover .star {
+    top: -40px;
+    left: -30px;
+  }
+
+  /* ------ 04.darkmode ------ */
+  .inner-04 .title {
+    margin: 20px auto;
+  }
+  .inner-04 .first {
+    width: 100%;
+  }
+  .inner-04 .second {
+    width: 100%;
+  }
+  .inner-04 .third {
+    width: 100%;
+    height: auto;
+  }
+  .toggle {
+    width: 80px;
+    height: 33px;
+  }
+  .toggleBtn {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* footer */
+  
+}

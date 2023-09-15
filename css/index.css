@@ -1,0 +1,525 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@500;700&display=swap');
+/* font-family: 'Lexend Mega', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap');
+/* 
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
+ */
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+  1920px 기준 1vw = 19px 
+  16px = 0.83vw
+  18px = 0.94vw
+  20px = 1.04vw
+  64px = 3.33vw
+*/
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;;
+  font-size: 16px;
+  font-size: 0.94vw;
+  line-height: 1.7em;
+  color: #191919;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+}
+section>div { /* inner */
+  max-width: 1680px;
+  height: inherit;
+  padding: 100px 80px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid #fff;  */
+}
+/* 임시 */
+.first, .second, .third {
+  /* border: 1px solid #000; */
+}
+/* Header @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#mo-header {
+  display: none;
+}
+#pc-header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 10;
+  background-color: transparent;
+  font-size: 20px;
+  font-size: 1.250rem;
+  /* font-size: 1.04vw; */
+  opacity: 0;
+}
+.pc-header-inner {
+  width: 100%;
+  max-width: 1680px;
+  padding: 0 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  flex: 2;
+}
+.logo img {
+  filter: invert();
+  line-height: 100px;
+}
+.gnb {
+  flex: 4;
+}
+.gnb ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb ul li a {
+  line-height: 100px;
+  text-align: center;
+}
+#pc-header.y2k {
+  opacity: 1;
+  background-color: #b8b8b8;
+  font-family: "NeoDunggeunmoPro-Regular";
+  border-bottom: 2px solid #eee;
+}
+#pc-header.typo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  opacity: 1;
+}
+#pc-header.neo {
+  opacity: 1;
+  background-color: #FFC900;
+  font-family: 'Lexend Mega', sans-serif;
+  border-bottom: 2px solid #000;
+  font-weight: 500;
+}
+#pc-header.darkmode {
+  opacity: 1;
+  color: #FD568E;
+}
+
+/* Section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+#main {
+  background: url('../images/bg/blur.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#main p {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 86px;
+  font-size: 4.47vw;
+  font-weight: 700;
+  line-height: calc(100vh / 5);
+  height: calc(100vh / 5);
+  color: rgba(255,255,255,0.75);
+  padding: 0 100px;
+  text-align: left;
+  border: 1px solid #fff;
+}
+#main p:hover {
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+}
+#main p:nth-of-type(3) {
+  text-align: right;
+  font-family: 'Playfair Display', serif;
+}
+
+/* --------- Section: 1.y2k --------- */
+#y2k {
+  background: url(../images/bg/purplebg.png) no-repeat center center;
+  background-color: #fff;
+  background-size: cover;
+  font-family: "NeoDunggeunmoPro-Regular";
+  overflow-y: auto;
+}
+.inner-01 {
+
+}
+.window {
+  max-width: 1400px;
+  width: 100%;
+  height: 80%;
+  margin: 50px auto 0;
+}
+.window .blue {
+  height: 20%;
+  width: 100%;
+  background-color: #141897;
+  border-radius: 15px 15px 0 0;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #eee  #191919 #191919 #eee; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.window .blue img {
+  display: inline-block;
+  width: 32vw;
+  aspect-ratio: auto 10.9/1;
+  filter: invert(1);
+  text-align: center;
+}
+.window .content {
+  height: 80%;
+  width: 100%;
+  background-color: #C7C7C7;
+  border-radius: 0 0 15px 15px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #eee  #191919 #191919 #eee;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.window .content div {
+  line-height: 1.2;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #eee #616161 #616161 #eee;
+  padding: 50px;
+  background-color: #D9D9D9;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.window .content div:first-child {
+  font-size: 64px;
+  font-size: 3.33vw;
+  text-transform: capitalize;
+  grid-row: span 2;
+}
+.window .content div:nth-child(2) {
+  font-size: 20px;
+  font-size: 1.04vw;
+  font-size: 1.250rem;
+  grid-row: span 2;
+}
+
+
+/* --------- Section: 2.big typography --------- */
+#typo {
+  background-color: #000;
+  background: url('../images/bg/typobg.JPG') no-repeat top center;
+  background-size: cover;
+}
+.inner-02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  /* 원래 section 너비 
+  max-width: 1680px;
+  padding: 100px 80px;
+  */
+}
+.inner-02 p {
+  display: inline-block;
+  width: 100%;
+  color: #F0D545;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10.94vw;
+  line-height: 1.2;
+  font-weight: 800;
+  padding:0;
+  margin:0;
+  letter-spacing: 1px;
+}
+.inner-02 p:nth-child(1) {
+  text-align: left;
+}
+.inner-02 p:nth-child(2) {
+  text-align: right;
+}
+.inner-02 span {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+  font-size: 2.08vw;
+  color: #fff;
+  line-height: 58px;
+  line-height: 1.2;
+  white-space: pre-line;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+
+/* --------- Section: 3.neo-brutalism --------- */
+#neo {
+  background-color: #FFC900;
+  font-family: 'Lexend Mega', sans-serif;
+  font-weight: 700;
+}
+.inner-03 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+  width: 100%;
+}
+.inner-03 div.card {
+  padding: 30px;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 3px solid #000;
+  -webkit-box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-size: 1.04vw;
+}
+.inner-03 div.first {
+  flex: 4;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  gap: 20px;
+  height: 100%;
+}
+.inner-03 div.second {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+  align-items: end;
+}
+/* --first-- */
+.neo-title {
+  background-color: #fff;
+  font-size: 86px;
+  font-size: 4.47vw;
+  width: 100%;
+  height: 25%;
+  white-space: nowrap;
+  text-align: center;
+}
+.neo-desc1 {
+  background-color: #FFBFF1;
+  width: 55%;
+  height: 64%;
+  text-align: left;
+}
+.neo-desc2 {
+  background-color: #BBFFF3;
+  width: calc(100% - 55% - 20px);
+  height: 64%;
+  text-align: left;
+}
+/* --second-- */
+.site {
+  width: 100%;
+  height: 35%;
+  background-color: #fff;
+}
+.btnBox {
+  width: 100%;
+  height: 15%;
+  position: relative;
+}
+.button {
+  background-color: #C4A1FF;
+  width: 100%;
+  height: 100%;
+  font-size: 2.08vw;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: 0.3s;
+}
+.button2, .button3 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.button2 {
+  background-color: #FF7A5C;
+}
+.button3 {
+  background-color: #69D2E7;
+}
+.btnBox:hover .button {
+  top: -30px;
+  left: -30px;
+}
+.btnBox:hover .button2 {
+  opacity: 1;
+  top: -15px;
+  left: -15px;
+}
+.btnBox:hover .button3 {
+  opacity: 1;
+}
+.star {
+  position: absolute;
+  width: 95px;
+  height: 92px;
+  top: -40px;
+  left: -35px;
+  z-index: 5;
+  transition: 0.3s;
+}
+.btnBox:hover .star {
+  top: -70px;
+  left: -60px;
+}
+/* --------- Section: 4.dark mode --------- */
+#darkmode {
+  background-color: #1A1625;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+#darkmode.active {
+  background-color: #f9f9f9;
+  color: #191919;
+}
+.inner-04 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.inner-04 .title {
+  width: 100%;
+  font-size: 86px;
+  font-size: 4.47vw;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  margin: 100px 50px;
+  transition: all 0.3s ease-in;
+}
+.inner-04 .title.active {
+  color: #191919;
+}
+/* 카드 */
+.inner-04 div.card {
+  padding: 30px;
+  background-color: #433961;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  border-radius: 30px;
+  line-height: 1.2;
+  font-size: 20px;
+  font-size: 1.04vw;
+  font-size: 1.250rem;
+}
+      
+.inner-04 div.card.active {
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 19px );
+  -webkit-backdrop-filter: blur( 19px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.inner-04 .first {
+  display: inline-block;
+  width: 40%;
+  height: auto;/* 460px; */
+}
+.inner-04 .second {
+  width: 30%;
+  height: auto;/* 460px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inner-04 .second .card {
+  width: 100%;
+  flex: 1;
+}
+.inner-04 .third {
+  width: 25%;
+  height: auto;/* 460px; */
+}
+
+.toggle {
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  border: 3px solid #FD568E;
+  background-color: #000;
+  position: relative;
+  margin: 100px auto 0;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.toggle.active {
+  border: 3px solid #433961;
+  background-color: #fff;
+}
+.toggleBtn {
+  width: 38px;
+  height: 38px; 
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.toggleBtn.active {
+  top: 50%;
+  left: 4px;
+  background-color: #433961;
+}
+
+
+
+/* Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+footer {
+  background-color: #191919;
+  width: 100%;
+  height: 20vh;
+
+}
+.footer-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-size: 0.67vw;
+}
