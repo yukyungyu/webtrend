@@ -88,6 +88,9 @@
   }
 
   /* ------ 04.darkmode ------ */
+  .inner-04 .title { 
+    margin: 50px 0;
+  }
   .inner-04 .first {
     width: 60%;
   }
@@ -97,6 +100,9 @@
   .inner-04 .third {
     width: 100%;
     height: auto;
+  }
+  .toggle {
+    margin: 30px auto;
   }
 }
 
@@ -294,6 +300,7 @@
   .toggle {
     width: 80px;
     height: 33px;
+    margin: 20px auto;
   }
   .toggleBtn {
     width: 16px;
