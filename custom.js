@@ -2,16 +2,16 @@ $(document).ready(function() {
   /* HeaderChange */
   $(window).scroll(function() {
     //y2k
-    let sec1Top = $("#y2k").offset().top-100; 
+    let sec1Top = $("#y2k").offset().top; 
     let sec1Bottom = sec1Top + $("#y2k").height(); 
     //typo
-    let sec2Top = $("#typo").offset().top-100; 
+    let sec2Top = $("#typo").offset().top; 
     let sec2Bottom = sec2Top + $("#typo").height();
     //neo
-    let sec3Top = $("#neo").offset().top-100; 
+    let sec3Top = $("#neo").offset().top; 
     let sec3Bottom = sec3Top + $("#neo").height();
     //darkmode
-    let sec4Top = $("#darkmode").offset().top-100; 
+    let sec4Top = $("#darkmode").offset().top; 
     let sec4Bottom = sec4Top + $("#darkmode").height();
 
     //y2k
