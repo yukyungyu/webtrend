@@ -67,6 +67,4 @@ $(document).ready(function() {
     $(".mo_view").stop(true, true).animate({"right":"-60%"});
     $(".close").hide();
   });
- 
-
 });
