@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Trends-Responsive</title>
   <link rel="stylesheet" href="css/index.css">
-  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <!-- PC헤더 -->
@@ -54,14 +54,18 @@
   </header>
 
   <!-- Section Start -->
-  <section id="main" class="section active">
-    <p><a href="#y2k">y2k</a></p>
-    <p><a href="#typo">big typography</a></p>
-    <p><a href="#">About 2023 Web Trends</a></p>
-    <p><a href="#neo">neo-brutalism</a></p>
-    <p><a href="#darkmode">dark mode</a></p>
+  <section id="main" class="area">
+    <div>
+      <p class="device"></p>
+      <div class="line">
+        <p class="about">About
+          <span></span>
+        </p>
+      </div>
+      <p>2023 Web Trends</p>
+    </div>
   </section>
-  <section id="y2k" class="section">
+  <section id="y2k" class="area">
     <div class="inner-01">
       <div class="window">
         <div class="blue">
@@ -76,17 +80,17 @@
               Prevalent in popular culture from 1997 to around 2005, the Y2K aesthetic manifested an over-the-top futurism that had a strong impact on the timeline of pop culture and design. Hitting on graphic design, fashion, technology, music and more—it was a visual language that embraced the unknown of a new millennium with an optimistic spirit.
           </span>
           </div>
-          <div>
-            <span>site</span>
+          <div class="y2k-site">
+            <a href="https://www.thecheckout.klarna.com/" target="_blank"><img src="images/y2k-website.png" alt="y2k사이트1"></a>
           </div>
-          <div>
-            <span>site</span>
+          <div class="y2k-site">
+            <a href="https://mac-template.webflow.io/" target="_blank"><img src="images/y2k-website2.jpeg" alt="y2k사이트2"></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="typo" class="section">
+  <section id="typo" class="area">
     <div class="inner-02">
       <p>BIG</p>
       <p>TYPOGRAPHY</p>
@@ -98,7 +102,7 @@
       </span>
     </div>
   </section>
-  <section id="neo" class="section">
+  <section id="neo" class="area">
     <div class="inner-03">
       <div class="first">
         <div class="neo-title card">NEO-BTURALISM</div>
@@ -113,8 +117,12 @@
         </div>
       </div>
       <div class="second">
-        <div class="site card">site</div>
-        <div class="site card">site</div>
+        <div class="neo-site card">
+          <a href="https://land-book.com/websites/38061-colorwonder-shop-website-template" target="_balnk"><img src="images/colorwonder-min.gif" alt="네오브루탈리즘1"></a>
+        </div>
+        <div class="neo-site card">
+          <a href="https://cafe-robot.co/" target="_blank"><img src="images/cafe-robot-min.gif" alt="네오브루탈리즘2"></a>
+        </div>
         
         <div class="btnBox">
           <img class="star" src="images/strongstar.png" alt="별">
@@ -128,7 +136,7 @@
     </div>
     
   </section>
-  <section id="darkmode" class="section">
+  <section id="darkmode" class="area">
     <div class="inner-04">
       <p class="title">Dark Mode</p>
       <div class="first card">
@@ -166,6 +174,6 @@
 
   <script src="js/jquery-3.7.0.min.js"></script>
   <!-- custom.js -->
-  <!-- <script src="custom.js"></script> -->
+  <script src="custom.js"></script>
 </body>
 </html>

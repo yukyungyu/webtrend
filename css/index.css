@@ -122,30 +122,57 @@ section>div { /* inner */
   background-size: cover;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+#main div {
+  width: 80%;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(0,0,0,0.8);
+  line-height: 1.5;
+}
+#main p.device {
   position: relative;
 }
-#main p {
-  display: block;
-  width: 100%;
-  text-transform: uppercase;
+#main p.device::after {
+  content: '01. PC';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .line {
+  margin: 0;
+}
+#main .line .about {
+  text-align: left;
   font-size: 86px;
   font-size: 4.47vw;
-  font-weight: 700;
-  line-height: calc(100vh / 5);
-  height: calc(100vh / 5);
-  color: rgba(255,255,255,0.75);
-  padding: 0 100px;
+  position: relative;
+}
+#main .line .about span {
+  position: absolute;
+  display: inline-block;
+  width: 90%;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.8);
+}
+#main div p {
   text-align: left;
-  border: 1px solid #fff;
+  font-size: 86px;
+  font-size: 4.47vw;
+  white-space: nowrap;
 }
-#main p:hover {
-  background-color: rgba(0,0,0,0.2);
-  backdrop-filter: blur(8px);
+#main .device {
+  font-size: 36px;
+  font-size: 1.875vw;
+  margin-bottom: 120px;
 }
-#main p:nth-of-type(3) {
-  text-align: right;
-  font-family: 'Playfair Display', serif;
-}
+
+
 
 /* --------- Section: 1.y2k --------- */
 #y2k {
@@ -200,10 +227,12 @@ section>div { /* inner */
   border-style: solid;
   border-width: 3px;
   border-color: #eee #616161 #616161 #eee;
-  padding: 50px;
   background-color: #D9D9D9;
   text-align: left;
   letter-spacing: 1px;
+}
+.window .content div:not(.y2k-site) {
+  padding: 50px;
 }
 .window .content div:first-child {
   font-size: 64px;
@@ -217,7 +246,14 @@ section>div { /* inner */
   font-size: 1.250rem;
   grid-row: span 2;
 }
-
+.y2k-site {
+  overflow: hidden;
+}
+.y2k-site img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* --------- Section: 2.big typography --------- */
 #typo {
@@ -239,7 +275,7 @@ section>div { /* inner */
 .inner-02 p {
   display: inline-block;
   width: 100%;
-  color: #F0D545;
+  color: rgba(240, 213, 69, 0.85); /* #F0D545 */
   font-family: 'Oswald', sans-serif;
   font-size: 10.94vw;
   line-height: 1.2;
@@ -283,7 +319,6 @@ section>div { /* inner */
   width: 100%;
 }
 .inner-03 div.card {
-  padding: 30px;
   line-height: 1.2;
   display: flex;
   justify-content: center;
@@ -295,6 +330,9 @@ section>div { /* inner */
   box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
   font-size: 20px;
   font-size: 1.04vw;
+}
+.inner-03 div.card:not(.neo-site) {
+  padding: 30px;
 }
 .inner-03 div.first {
   flex: 4;
@@ -336,10 +374,16 @@ section>div { /* inner */
   text-align: left;
 }
 /* --second-- */
-.site {
+.neo-site {
   width: 100%;
   height: 35%;
   background-color: #fff;
+  overflow: hidden;
+}
+.neo-site img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .btnBox {
   width: 100%;

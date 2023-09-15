@@ -30,12 +30,27 @@
     background: url('../images/bg/metal.png') no-repeat center center;
     background-size: cover;
   }
-  #main p {
-    padding: 0 50px;
+  #main p.device::after {
+    content: '02. Tablet';
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   /* ------ 01.y2k ------ */
-
-
+  .window {
+    height: 100%;
+  }
+  .window .blue {
+    height: 20%;
+  }
+  .window .content{
+    grid-template-columns: repeat(2, 1fr);
+    height: 80%;
+  }
+  .window .content div:nth-of-type(2) {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 
   /* ------ 02.big typo ------ */
   .inner-02 p {
@@ -45,9 +60,32 @@
 
   /* ------ 03.neo-brutalism ------ */
   .inner-03 {
-    flex-direction: column;
+    gap: 30px;
   }
-
+  .inner-03 div.first {
+    flex: auto;
+    height: 48%;
+  }
+  .inner-03 div.second {
+    flex: auto;
+    height: 48%;
+    flex-direction: row;
+  }
+  .inner-03 div.second .card {
+    height: 100%;
+  }
+  .neo-title {
+    height: 30%;
+  }
+  .neo-desc1,
+  .neo-desc2 {
+    height: 59%;
+  }
+  .btnBox {
+    width: 50%;
+    height: 100%;
+    line-height: 100%;
+  }
 
   /* ------ 04.darkmode ------ */
   .inner-04 .first {
@@ -59,8 +97,6 @@
   .inner-04 .third {
     width: 100%;
     height: auto;
-  }
-  .toggle {
   }
 }
 
@@ -160,10 +196,12 @@
     background: url('../images/bg/per.jpg') no-repeat center center;
     background-size: cover;
   }
-  #main p {
-    padding: 0 30px;
+  #main p.device::after {
+    content: '03. Mobile';
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-
   /* ------ 01.y2k ------ */
   .window {
     margin: 0 auto;
@@ -172,7 +210,10 @@
     grid-template-columns: repeat(1, 1fr);
     height: 100%;
   }
-  
+  .window .content div:nth-of-type(2) {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
   /* ------ 02.big typo ------ */
   .inner-02 {
     padding: 0 100px;
@@ -191,15 +232,16 @@
   }
   .inner-03 div.card {
     padding: 15px;
+    border-radius: 15px;
   }
   .inner-03 div.first {
     flex-direction: column;
-    height: auto;
+    height: 50%;
     flex:1;
   }
   .inner-03 div.second {
     flex:1;
-    height: auto;
+    height: 50%;
   }
   .neo-title,
   .neo-desc1.card, 
