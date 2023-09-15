@@ -236,18 +236,18 @@
   }
   .inner-03 div.first {
     flex-direction: column;
-    height: 50%;
+    height: 40%;
     flex:1;
   }
   .inner-03 div.second {
-    flex:1;
     height: 50%;
+    flex:1;
   }
   .neo-title,
   .neo-desc1.card, 
   .neo-desc2.card {
     width: 100%;
-    /* height: auto; */
+    height: auto;
   }  
   .neo-title {height: 20%;}
   .neo-desc1,
