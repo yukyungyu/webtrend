@@ -56,6 +56,10 @@
   .inner-02 p {
     font-size: 14vw;
   }
+  .inner-02 span {
+    font-size: 36px;
+    font-size: 2.250rem;
+  }
 
 
   /* ------ 03.neo-brutalism ------ */
@@ -75,11 +79,15 @@
     height: 100%;
   }
   .neo-title {
+    font-size: 60px;
+    font-size: 3.750rem;
     height: 30%;
   }
   .neo-desc1,
   .neo-desc2 {
     height: 59%;
+    font-size: 14px;
+    font-size: 0.875rem;
   }
   .btnBox {
     width: 50%;
@@ -116,12 +124,15 @@
   } 
   #mo-header {
     display: block;
+    width: 100%;
+    position: fixed;
   }
   /* Mobile Menu */
   #mo-header .mo_top {
     display: flex;
     justify-content: space-between;
     align-items : center;
+    padding: 10px 20px;
   }
   #mo-header .mo_view {
     display: flex;
@@ -138,7 +149,7 @@
     font-size: 1.125rem;
   }
   #mo-header.y2k .mo_view {background-color: #b8b8b8;}
-  #mo-header.typo .mo_view {color: #fff;}
+  #mo-header.typo .mo_view {color: #fff; background-color: rgba(0,0,0,0.4);}
   #mo-header.neo .mo_view {background-color: #FFC900;}
   #mo-header.darkmode .mo_view {color: #FD568E;}
   
@@ -149,6 +160,7 @@
   }
   #mo-header.typo .mo_view li:not(.close) 
   {
+    background-color: rgba(255,255,255,0.5);
     color: #191919;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -220,6 +232,10 @@
     font-size: 14px;
     font-size: 0.875rem;
   }
+  .window .content div:first-child {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
   /* ------ 02.big typo ------ */
   .inner-02 {
     padding: 0 30px;
@@ -229,6 +245,8 @@
   }
   .inner-02 span {
     margin-top: 30px;
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   /* ------ 03.neo-brutalism ------ */
@@ -242,12 +260,15 @@
   }
   .inner-03 div.first {
     flex-direction: column;
-    height: 40%;
+    height: 60%;
     flex:1;
   }
   .inner-03 div.second {
-    height: 50%;
+    height: 38%;
     flex:1;
+  }
+  .inner-03 .neo-site:nth-of-type(1) {
+    display: none;
   }
   .neo-title,
   .neo-desc1.card, 
@@ -255,9 +276,15 @@
     width: 100%;
     height: auto;
   }  
-  .neo-title {height: 20%;}
+  .neo-title {
+    font-size: 30px;
+    font-size: 1.875rem;
+    height: 15%;
+  }
   .neo-desc1,
   .neo-desc2 {
+    font-size: 14px;
+    font-size: 0.875rem;
     height: 33%;
   }
   .btnBox { 
@@ -282,10 +309,16 @@
     top: -40px;
     left: -30px;
   }
+  .btnBox .button {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
 
   /* ------ 04.darkmode ------ */
   .inner-04 .title {
     margin: 20px auto;
+    font-size: 30px;
+    font-size: 1.875rem;
   }
   .inner-04 .first {
     width: 100%;
@@ -296,6 +329,10 @@
   .inner-04 .third {
     width: 100%;
     height: auto;
+  }
+  .inner-04 div.card {
+    font-size: 14px;
+    font-size: 0.875rem;
   }
   .toggle {
     width: 80px;

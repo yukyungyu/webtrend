@@ -29,7 +29,6 @@ html::-webkit-scrollbar {
 body {
   font-family: 'Noto Sans KR', sans-serif;;
   font-size: 16px;
-  font-size: 0.94vw;
   line-height: 1.7em;
   color: #191919;
 }
@@ -61,7 +60,6 @@ section>div { /* inner */
   background-color: transparent;
   font-size: 20px;
   font-size: 1.250rem;
-  /* font-size: 1.04vw; */
   opacity: 0;
 }
 .pc-header-inner {
@@ -134,6 +132,7 @@ section>div { /* inner */
   line-height: 1.5;
 }
 #main p.device {
+  margin-top: 30px;
   position: relative;
 }
 #main p.device::after {
@@ -236,13 +235,12 @@ section>div { /* inner */
 }
 .window .content div:first-child {
   font-size: 64px;
-  font-size: 3.33vw;
+  font-size: 4rem;
   text-transform: capitalize;
   grid-row: span 2;
 }
 .window .content div:nth-child(2) {
   font-size: 20px;
-  font-size: 1.04vw;
   font-size: 1.250rem;
   grid-row: span 2;
 }
@@ -296,7 +294,7 @@ section>div { /* inner */
   margin: 0;
   font-weight: bold;
   font-size: 40px;
-  font-size: 2.08vw;
+  font-size: 2.5rem;
   color: #fff;
   line-height: 58px;
   line-height: 1.2;
@@ -328,8 +326,6 @@ section>div { /* inner */
   -webkit-box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
   box-shadow: 4px 6px 0px 0px rgba(0, 0, 0, 1);
-  font-size: 20px;
-  font-size: 1.04vw;
 }
 .inner-03 div.card:not(.neo-site) {
   padding: 30px;
@@ -354,8 +350,8 @@ section>div { /* inner */
 /* --first-- */
 .neo-title {
   background-color: #fff;
-  font-size: 86px;
-  font-size: 4.47vw;
+  font-size: 80px;
+  font-size: 5rem;
   width: 100%;
   height: 25%;
   white-space: nowrap;
@@ -459,8 +455,8 @@ section>div { /* inner */
 }
 .inner-04 .title {
   width: 100%;
-  font-size: 86px;
-  font-size: 4.47vw;
+  font-size: 80px;
+  font-size: 5rem;
   line-height: 1.2;
   text-align: center;
   display: block;
@@ -481,7 +477,7 @@ section>div { /* inner */
   border-radius: 30px;
   line-height: 1.2;
   font-size: 20px;
-  font-size: 1.04vw;
+  font-size: 1.250rem;
 }
       
 .inner-04 div.card.active {
@@ -563,6 +559,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
-  font-size: 0.67vw;
+  font-size: 12px;
+  font-size: 0.750rem;
 }
